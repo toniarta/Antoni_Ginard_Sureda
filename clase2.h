@@ -4,7 +4,9 @@
 #include <string>
 using namespace std;
 
-class clase2
+#include "superclase.h"
+
+class clase2 : public superclase
 	{
 	private:
 		int b;

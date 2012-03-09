@@ -11,5 +11,7 @@ int main(int argc, char* argv[])
 	clase1 c1();
 	clase2 c2();
 	
+	//c1.setS(10);
+	
 	return 0;
 	}

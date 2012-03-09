@@ -6,10 +6,13 @@ LIBRARIES = -g3
 #/usr/lib/LibMeves/LibRedMeva.a -gdb3 
 all: main
 
-main : main.o clase1.o clase2.o 
+main : main.o superclase.o clase1.o clase2.o 
 	$(CC) $(CFLAGS) $(LIBDIR) $? $(LIBRARIES) -o $@ 
 
 main.o : main.cpp
+	$(CC) $(CFLAGS) $(LIBDIR) -c $<
+
+superclase.o : superclase.cpp
 	$(CC) $(CFLAGS) $(LIBDIR) -c $<
 
 clase1.o : clase1.cpp
